@@ -27,8 +27,8 @@ def get_directions(client, start_coords, end_coords):
         return None
 
 # 用户输入起点和终点
-start_coords = (51.5567000, -0.1061000)
-end_coords = (52.5092000, -1.8847000)
+start_coords = (-0.1061000，51.5567000)
+end_coords = (-1.8847000，52.5092000)
 
 # 获取路线数据
 routes = get_directions(client, start_coords, end_coords)
