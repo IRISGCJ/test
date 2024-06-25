@@ -7,7 +7,7 @@ import folium
 client = openrouteservice.Client(key='5b3ce3597851110001cf6248ec4432c73f4f4735a30df115efb8e6bc')
 
 # 使用缓存来存储路由数据
-@st.cache_data(ttl=3600)
+@st.cache(ttl=3600)
 def get_directions(client, start_coords, end_coords):
     try:
         routes = client.directions(
